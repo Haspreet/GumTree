@@ -1,0 +1,180 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="user_MasterPage, App_Web_zblv1mog" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gumtree</title>
+<link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="form1" runat ="server">
+<!-- fullbody starts -->
+<div class="fullbody">
+	<!-- header-part starts -->
+    <div class="header-part">
+    	<!-- wrapper starts -->
+        <div class="wrapper">
+        	<div class="header">
+            	<!-- logo div -->
+            	<div class="logo">
+                	<a href="#"><img src="../images/logo.png" alt="LOGO" border="0" /> </a>
+                </div>
+                <!-- logo div -->
+                
+                <!-- right side div -->
+                <div class="right_side">
+                
+                		<!-- login and register div -->
+                        <!-- login and register div -->
+                        
+                        <div class="clearfix"></div>
+                        
+                        
+                        
+                        <!-- navigation div -->
+                        <div class="navigation_bar">
+                        
+                        		<ul>
+                                		
+                                </ul>
+                            
+                        </div>
+                        <!-- navigation div -->
+                        
+                        
+                </div>
+                <!-- right side div -->
+                
+                
+                <div class="clearfix"></div>
+                
+            </div>
+            
+        </div>
+        <!-- wrapper ends -->
+    </div>
+    <!-- header-part ends -->
+   
+     <!-- content div  -->
+    <div class="content">
+    	
+        <div class="wrapper">
+        			
+                    
+                    
+                    <!-- left side div -->
+        			<div class="left_search">
+                    	
+                        
+                        <!-- new search div -->
+                        <!-- new search div -->
+                        
+                         <!-- new search div -->
+                        <div class="new_search">
+                        
+                      
+                        <div class="clearfix">Welcome&nbsp;
+                            <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
+                            </div>
+                            
+                        <ul>
+            <li>
+                <a href="frmpstadv.aspx">Post Ad</a>
+            </li>
+            <li>
+                <a href="frmmyads.aspx">My Ads</a>
+            </li>
+            <li>
+                <a href="frmsrcads.aspx">Search Ads</a>
+            </li>
+             <li>
+                <a href="frmfav.aspx">Favourites</a>
+            </li>
+            <li>
+                <a href="frmchgpwd.aspx">Reset Password</a>
+            </li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass="change_style_button" CausesValidation="False">Logout</asp:LinkButton>
+                            </li>
+             </ul>
+                      
+                          
+                        <asp:DataList ID="DataList1" runat="server" DataSourceID="ObjectDataSource1" RepeatColumns="2" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                           <HeaderTemplate>
+  <center><h3>All Categories </h3></center>
+                        
+                        <div class="clearfix"></div>
+                        
+                      
+                      <ul>
+                           </HeaderTemplate>
+                                 <ItemTemplate>
+             	<li>
+                        <a href="frmsrcads.aspx"><img src=../catpics/<%#Eval("catcod") %><%#Eval("catpic") %> />
+                        <div class="clearfix"></div>
+                        
+                        <h3><%#Eval("catnam") %></h3>
+                        <div class="clearfix"></div>
+                        
+                        <h5><%#Eval("noa") %></h5>
+                        
+                        </a>
+                        </li>
+                            </ItemTemplate>
+                                <FooterTemplate>
+                                     </ul>
+                                </FooterTemplate>
+                            </asp:DataList>
+                           
+                            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="dspadsbycat" TypeName="nsgumtree.clsadv"></asp:ObjectDataSource>
+                        <!-- new search div -->
+                         </div>                       
+                    
+                    </div>
+                    <!-- left side div -->
+                    
+                    
+                    <!-- right side div -->
+                    <div class="right_search">
+                    
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>     
+                    
+                    <div class="clearfix"></div>
+                    
+                    
+                    <!-- pagination div -->
+                    <!-- pagination div -->
+                    
+                    
+                    </div>
+                    <!-- right side div -->
+        
+        </div>
+        	
+    </div>
+    <!-- content div  -->
+   
+   
+    
+    <div class="clearfix"></div>
+      
+     <!-- footer div --> 
+     <div class="footer">
+     
+     			<div class="inner_footer">
+                	
+                
+                </div>
+            
+     </div>
+     <!-- footer div --> 
+    
+    
+    
+</div>
+<!-- fullbody ends -->
+    </form>
+</body>
+</html>
+

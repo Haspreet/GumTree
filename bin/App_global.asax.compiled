@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/FinalGuntree aspnet/global.asax" hash="6bd4255e" filehash="ffffd8b70dfaebe0" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/FinalGuntree aspnet/global.asax" />
+    </filedeps>
+</preserve>

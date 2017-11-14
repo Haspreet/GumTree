@@ -1,0 +1,150 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_o3o4qhnh" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gumtree</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form id="form1" runat ="server" >
+<!-- fullbody starts -->
+<div class="fullbody">
+	<!-- header-part starts -->
+    <div class="header-part">
+    	<!-- wrapper starts -->
+        <div class="wrapper">
+        	<div class="header">
+            	<!-- logo div -->
+            	<div class="logo">
+                	<a href="#"><img src="images/logo.png" alt="LOGO" border="0" /> </a>
+                </div>
+                <!-- logo div -->
+                
+                <!-- right side div -->
+                <div class="right_side">
+                
+                		<!-- login and register div -->
+                		<div class="login">
+                        
+                        		<ul>
+                                	
+                                    <li class="log"><a href="login.aspx">login <span><img src="images/login-drop.png" /></span></a></li>
+                                    <li class="reg"><a href="frmreg.aspx">Register</a></li>
+                                		
+                                </ul>	
+                                
+                        </div>
+                        <!-- login and register div -->
+                        
+                        <div class="clearfix"></div>
+                        
+                        
+                        
+                        <!-- navigation div -->
+                        <div class="navigation_bar">
+                        
+                        		<ul>
+                                		
+                                </ul>
+                            
+                        </div>
+                        <!-- navigation div -->
+                        
+                        
+                </div>
+                <!-- right side div -->
+                
+                
+                <div class="clearfix"></div>
+                
+            </div>
+            
+        </div>
+        <!-- wrapper ends -->
+    </div>
+    <!-- header-part ends -->
+    
+    <!-- content div  -->
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+       
+    </div>
+    <!-- content div  -->
+    
+    <!-- popular div -->
+    <div class="popular_div">
+    	
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <!-- popular div -->
+    
+    <div class="clearfix"></div>
+    
+    <!-- white div -->
+    <div class="white_div">
+    	
+       <div class="inner_white">
+       		
+            <div class="wrapper">
+            
+       			&nbsp;</div>
+            
+       </div>
+    
+    </div>
+    <!-- white div -->
+    
+      <div class="clearfix"></div>
+      
+     <!-- footer div --> 
+     <div class="footer">
+     
+     			<div class="inner_footer">
+                	
+                    	<div class="wrapper">
+                        
+                        		<h2>Connect with Us</h2>
+                                
+                                <div class="clearfix"></div>
+                                
+                                <!-- social links div -->
+                                <div class="social_links">
+                                
+                                	<ul>
+                                    	
+                                        <li class="rs"><a href="https://www.rss.com"></a></li>
+                                        <li class="tw"><a href="https://twitter.com/"></a></li>
+                                        <li class="fb"><a href="https://www.facebook.com"></a></li>
+                                        <li class="in"><a href="https://in.linkedin.com/"></a></li>
+                                        <li class="gp"><a href="https://plus.google.com"></a></li>
+                                    
+                                    </ul>
+                                
+                                
+                                <div class="clearfix"></div>
+                                </div>
+                                <!-- social links div -->
+                                
+                                
+                                <h5>Copyright © 2013 - 2014 Gumtree. All rights reserved.</h5>
+                                
+                            
+                        </div>
+                    
+                
+                </div>
+            
+     </div>
+     <!-- footer div --> 
+    
+    
+    
+</div>
+<!-- fullbody ends -->
+        </form>
+</body>
+</html>
